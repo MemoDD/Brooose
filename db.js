@@ -4,10 +4,10 @@ const app = express();
 const fs=require("fs");
 
 const db = sql.createConnection({
-    Host:"sql.freedb.tech",
-    User:"u_VFOhjx",
-    Pass:"DBNvkp9X5K7q",
-    Dbname:"PbrowseDb",
+    host:"sql.freedb.tech",
+    user:"u_VFOhjx",
+    password:"DBNvkp9X5K7q",
+    database:"freedb_O4a7krET",
     infileStreamFactory: (filePath) => {
         // MySQL sends the file path from LOAD DATA LOCAL INFILE
         return fs.createReadStream(filePath);
