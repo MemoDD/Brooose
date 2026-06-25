@@ -6,8 +6,8 @@ const fs=require("fs");
 const db = sql.createConnection({
     Host:"sql.freedb.tech",
     User:"u_VFOhjx",
-    Password:"DBNvkp9X5K7q",
-    database:"PbrowseDb",
+    Pass:"DBNvkp9X5K7q",
+    Dbname:"PbrowseDb",
     infileStreamFactory: (filePath) => {
         // MySQL sends the file path from LOAD DATA LOCAL INFILE
         return fs.createReadStream(filePath);
