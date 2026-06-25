@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Grid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+
+  <h1>Enjoy BrowsingProducts</h1>
+
+  <!-- Filters -->
+  <div class="filters">
+    <label for="categoryInput">Search by category</label>
+    <input type="text" id="categoryInput" placeholder="Search by category">
+    <label for="dateInput">Date</label>
+    <input type="date" id="dateInput" title="Filter products by date" placeholder="Select a date">
+    <button id="applyFilters">Apply Filters</button>
+  </div>
+
+  <!-- Product grid container -->
+  <div id="grid-container" class="grid-container"></div>
+
+  <!-- Load more button -->
+  <button id="load-more">Load More</button>
+
+  <!-- Frontend script -->
+  <script src="frontscript.js"></script>
+</body>
+</html>
