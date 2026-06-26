@@ -12,7 +12,8 @@ async function loadProducts(reset = false) {
             nextCursor = null;
         }
 
-        let url = `http://localhost:3000/products?limit=${limit}`;
+        let url = `let url = "https://brooose.onrender.com/products?limit=10";
+`;
         if (nextCursor) url += `&cursor=${nextCursor}`;
         if (category) url += `&category=${encodeURIComponent(category)}`;
         if (startDate) url += `&startDate=${startDate}`;
