@@ -3,6 +3,7 @@ const cors = require("cors");
 
 
 const db = require("./db");
+const table = require("./createTable");
 
 const app = express();
 app.use(cors());
