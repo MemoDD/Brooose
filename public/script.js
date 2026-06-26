@@ -1,3 +1,7 @@
+window.addEventListener("DOMContentLoaded", () => {
+  loadProducts(true);
+});
+
 let cursor = 0;
 let nextCursor = null;
 const limit = 10;
