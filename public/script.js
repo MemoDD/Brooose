@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
-  loadProducts(true);
-});
+  
+
 
 let cursor = 0;
 let nextCursor = null;
@@ -51,3 +51,4 @@ async function loadProducts(reset = false) {
         console.error('Error loading products:', error);
     }
 }
+  });
