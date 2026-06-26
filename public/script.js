@@ -1,4 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
+  loadProducts(true);
+});
+
   
 
 
@@ -51,4 +54,15 @@ async function loadProducts(reset = false) {
         console.error('Error loading products:', error);
     }
 }
-  });
+// Apply Filters button
+document.getElementById("applyFilters").addEventListener("click", () => {
+  category = document.getElementById("categoryInput").value.trim();
+  startDate = document.getElementById("dateInput").value;
+  loadProducts(true); // reset and reload with filters
+});
+
+// Load More button
+document.getElementById("load-more").addEventListener("click", () => {
+  loadProducts(); // load next batch using nextCursor
+});
+
