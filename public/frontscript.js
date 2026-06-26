@@ -12,8 +12,8 @@ async function loadProducts(reset = false) {
             nextCursor = null;
         }
 
-        let url = `let url = "https://brooose.onrender.com/products?limit=10";
-`;
+        // ✅ Correct URL definition
+        let url = `https://brooose.onrender.com/products?limit=${limit}`;
         if (nextCursor) url += `&cursor=${nextCursor}`;
         if (category) url += `&category=${encodeURIComponent(category)}`;
         if (startDate) url += `&startDate=${startDate}`;
@@ -47,16 +47,3 @@ async function loadProducts(reset = false) {
         console.error('Error loading products:', error);
     }
 }
-
-// Apply filters
-document.getElementById("applyFilters").addEventListener("click", () => {
-    category = document.getElementById("categoryInput").value;
-    startDate = document.getElementById("dateInput").value;
-    loadProducts(true); // reset list
-});
-
-// Load more button
-document.getElementById("load-more").addEventListener("click", () => loadProducts());
-
-// Load first batch automatically
-document.addEventListener('DOMContentLoaded', () => loadProducts());
