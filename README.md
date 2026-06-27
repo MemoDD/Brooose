@@ -1,7 +1,9 @@
 # Brooose
 This is a backend application to let user browse 200000 products using filters and category .
 
----->>> https://broose.onrender.com
+
+## Live Demo 
+---->>> https://brooose.onrender.com
 
 
 ## Overview
@@ -46,7 +48,7 @@ Use tools like Postman or cURL to test endpoints.
 
 
 ## API Endpoints
-https://broose.onrender.com → shows backened integrated with frontend.(For visual browsing)
+https://brooose.onrender.com → shows backened integrated with frontend.(For visual browsing)
 
 
 (For running backend and getting raw json ) -
